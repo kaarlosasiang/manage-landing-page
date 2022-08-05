@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Bling | Sample Landing Page</title>
   </head>
   <body>
@@ -65,7 +66,7 @@
       <div class="md:hidden">
         <div
           id="menu"
-          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-1 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-1 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 shadow-2xl rounded-xl"
         >
           <a
             href="#"
@@ -102,7 +103,7 @@
         class="container flex flex-col-reverse items-center px-6 mx-auto py-10 space-y-0 md:space-y-0 md:flex-row"
       >
         <!-- Left Item -->
-        <div class="flex flex-col mb-32 space-y-9 md:w-1/2">
+        <div class="flex flex-col justify-start mb-32 space-y-9 md:w-1/2">
           <h1
             class="max-w-md text-4xl font-bold text-center text-textColor dark:text-white md:text-5xl md:text-left mt-6"
           >
@@ -118,17 +119,25 @@
           <div class="flex justify-center  md:justify-start"">
             <a
               href="https://dash.bling-center.com/platform/signup?plan=forever&_gl=1*t9fo3u*_ga*MTMyNDUxMTU0NS4xNjU5NTQ3NTI4*_ga_YD24XVZNC7*MTY1OTcyOTU2Ni44LjEuMTY1OTczMDcyMy4w&_ga=2.146896050.469137610.1659710083-1324511545.1659547528" target="_blank"
-              class="py-3 px-6 text-white bg-bingPurple rounded-full baseline hover:bg-bingPurpleHover"
+              class="btn py-3 px-6 text-white bg-bingPurple rounded-full baseline hover:bg-white hover:text-bingPurple border-2 hover:border-bingPurple"
             >
-              Sign Up for Free CRM
+              Sign Up for Free CRM <i class="bi bi-arrow-right"></i>
             </a>
           </div>
           <div class="flex justify-center md:justify-start">
             <a
               href="https://dash.bling-center.com/platform/signup?_gl=1*18dqux9*_ga*MTMyNDUxMTU0NS4xNjU5NTQ3NTI4*_ga_YD24XVZNC7*MTY1OTcyOTU2Ni44LjEuMTY1OTczMDQwMy4w&_ga=2.146896050.469137610.1659710083-1324511545.1659547528" target="_blank"
-              class=" py-3 px-3 text-white bg-orange-500 rounded-full baseline hover:bg-orange-400"
+              class="btn py-3 px-3 md:px-6 text-white bg-orange-500 rounded-full baseline hover:bg-white hover:text-orange-500 border-2 hover:border-orange-500" style="margin-top:-25px ;"
             >
-            Start Free Trial for Full suite of features
+            Start Free Trial for Full suite of features <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+          <div class="flex justify-center md:justify-start">
+            <a
+              class=" py-3 px-3 text-black bg-white rounded-full baseline" style="margin-top:-35px ;"
+            >
+            
+No Credit Card Required
             </a>
           </div>
         </div>

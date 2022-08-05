@@ -113,3 +113,7 @@ body {
   color: #18191f;
   margin-bottom: 0px;
 }
+
+.btn{
+    transition: all 0.3s;    
+}
