@@ -35,6 +35,19 @@ body {
     position: relative;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#menu{
+    animation: fadeIn .5s;
+}
+
+#menu a{
+    transition: all 0.3s ease-in;
+}
+
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom{
