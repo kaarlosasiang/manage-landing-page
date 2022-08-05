@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="shortcut icon" href="img/manage-icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Manage Landing Page</title>
   </head>
   <body>
@@ -14,24 +14,29 @@
       <!-- Flex container -->
       <div class="container mx-auto flex items-center justify-between">
         <!-- Logo -->
-        <div class="pt-2">
-          <img src="img/logo.svg" class="h-8" alt="Logo" />
+        <div class="pt-2 flex items-center">
+          <img src="https://www.bling.cloud/img/left-nav-logo.svg" class="w-36" alt="Logo" />
+          <div class="hidden space-x-6 md:flex">
+            <a href="#" class="hover:text-black font-semibold text-gray-600">Home</a>
+            <a href="#" class="hover:text-darkGrayishBlue font-semibold ">Pricing</a>
+            <a href="#" class="hover:text-darkGrayishBlue font-semibold ">Blogs</a>
+            <a href="#" class="hover:text-darkGrayishBlue font-semibold ">Book A Demo</a>
+          </div>
         </div>
         <!-- Menu items -->
-        <div class="hidden space-x-6 md:flex">
-          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
-        </div>
         <!-- Button -->
-        <a
-          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
-          id="toggle-darkMode"
+        <div class="flex space-x-2">
+          <a href="#"
+          class="hidden p-3 px-12 pt-2 text-bingPurple border-2 border-bingPurpleHover rounded-full baseline hover:border-bingPurple font-semibold md:flex items-center"
         >
-          Get Started
+          LogIn
         </a>
+        <a href="#"
+          class="hidden p-3 px-11 pt-2 text-white bg-bingPurple rounded-full baseline hover:bg-bingPurpleHover md:flex items-center font-semibold"
+        >
+          Sign Up
+        </a>
+        </div>
         <!-- Hamburger Icon-->
         <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
           <span class="hamburger-top"></span>
@@ -42,11 +47,11 @@
       <!-- Mobile Menu -->
       <div class="md:hidden">
         <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-1 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-          <a href="#" class="hover:bg-brightRedLight hover:text-white w-full text-center py-2">Pricing</a>
-          <a href="#" class="hover:bg-brightRedLight hover:text-white w-full text-center py-2">Product</a>
-          <a href="#" class="hover:bg-brightRedLight hover:text-white w-full text-center py-2">About Us</a>
-          <a href="#" class="hover:bg-brightRedLight hover:text-white w-full text-center py-2">Careers</a>
-          <a href="#" class="hover:bg-brightRedLight hover:text-white w-full text-center py-2">Community</a>
+          <a href="#" class="hover:bg-bingPurpleHover hover:text-white w-full text-center py-2">Pricing</a>
+          <a href="#" class="hover:bg-bingPurpleHover hover:text-white w-full text-center py-2">Product</a>
+          <a href="#" class="hover:bg-bingPurpleHover hover:text-white w-full text-center py-2">About Us</a>
+          <a href="#" class="hover:bg-bingPurpleHover hover:text-white w-full text-center py-2">Careers</a>
+          <a href="#" class="hover:bg-bingPurpleHover hover:text-white w-full text-center py-2">Community</a>
         </div>
       </div>
     </nav>
@@ -59,21 +64,25 @@
         <!-- Left Item -->
         <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
           <h1
-            class="max-w-md text-4xl font-bold text-center dark:text-white md:text-5xl md:text-left"
+            class="max-w-md text-4xl font-bold text-center dark:text-white md:text-5xl md:text-left mt-6"
           >
-            Bring Everyone together to build better products
+          All Customer Communications in One Place.
           </h1>
           <p
-            class="max-w-md text-center text-darkGrayishBlue dark:text-gray- md:text-left"
+            class="max-w-md text-center text-lg text-darkGrayishBlue dark:text-gray- md:text-left"
           >
-            Manage makes it simple for software teams to plan day-to-day tasks
-            while keeping the larger team goals in view.
+          Bling helps Business Owners manage all their customer communications in one single place. Business Phone, Social Media and an Auto Populating CRM - Manage your customer data easily.
           </p>
           <div class="flex justify-center md:justify-start">
             <a
               class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
             >
-              Get Started
+              Sign Up for Free CRM
+            </a>
+            <a
+              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            >
+              Start Free Trial for Full Suite of Features
             </a>
           </div>
         </div>
