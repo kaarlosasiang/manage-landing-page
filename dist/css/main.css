@@ -986,7 +986,7 @@ body {
 }
 
 #menu a{
-  transition: all 0.3s ease-in;
+  transition:0.3s ease-in;
 }
 
 .hamburger-top,
