@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-image: url("../img/bg-tablet-pattern.svg");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+/* #hero {
+  background-image: url("../img/Layer1.png");
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: 90% -25%;
-}
+  font-family: 'Open Sans', sans-serif;
+} */
+
+body {
+    background-image: url("../img/Layer1.png");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 90% -0%;
+    font-family: 'Roboto', sans-serif;
+  }
+
 
 #cta {
   background-image: url("../img/bg-simplify-section-desktop.svg");
@@ -25,8 +36,7 @@ body {
     }
 }
 
-
-
+ 
 .hamburger{
     cursor: pointer;
     width: 24px;
@@ -84,4 +94,20 @@ body {
 
 .open .hamburger-bottom{
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.partners img{
+    max-width: 150px;
+}
+
+.billings{
+    background: linear-gradient(262.68deg, #D99BFF 13.2%, #9A76FF 82.11%);
+}
+
+.price{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    color: #18191F;
+    margin-bottom: 0px;
 }
