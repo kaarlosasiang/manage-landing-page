@@ -626,6 +626,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -906,6 +911,11 @@ video {
 .bg-veryDarkBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(233 12% 13% / var(--tw-bg-opacity));
+}
+
+.bg-bingPurpleHover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(157 125 249 / var(--tw-bg-opacity));
 }
 
 .p-6 {
