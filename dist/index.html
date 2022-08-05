@@ -12,7 +12,7 @@
     <!-- Navbar -->
     <nav class="w-full p-6 bg-white shadow-sm fixed">
       <!-- Flex container -->
-      <div class="container mx-auto flex items-center justify-between">
+      <div class="container mx-auto items-center justify-between flex">
         <!-- Logo -->
         <div class="pt-2 flex items-center space-x-4">
           <img
@@ -102,7 +102,7 @@
         class="container flex flex-col-reverse items-center px-6 mx-auto py-10 space-y-0 md:space-y-0 md:flex-row"
       >
         <!-- Left Item -->
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+        <div class="flex flex-col mb-32 space-y-9 md:w-1/2">
           <h1
             class="max-w-md text-4xl font-bold text-center text-textColor dark:text-white md:text-5xl md:text-left mt-6"
           >
@@ -115,12 +115,20 @@
             in one single place. Business Phone, Social Media and an Auto
             Populating CRM - Manage your customer data easily.
           </p>
-          <div class="flex gap-2 justify-center md:justify-start">
+          <div class=" ">
             <a
-              href="#"
+              href="https://dash.bling-center.com/platform/signup?plan=forever&_gl=1*t9fo3u*_ga*MTMyNDUxMTU0NS4xNjU5NTQ3NTI4*_ga_YD24XVZNC7*MTY1OTcyOTU2Ni44LjEuMTY1OTczMDcyMy4w&_ga=2.146896050.469137610.1659710083-1324511545.1659547528" target="_blank"
               class="p-3 px-6 text-white bg-bingPurple rounded-full baseline hover:bg-bingPurpleHover"
             >
               Sign Up for Free CRM
+            </a>
+          </div>
+          <div class=" items-start -mt-36">
+            <a
+              href="https://dash.bling-center.com/platform/signup?_gl=1*18dqux9*_ga*MTMyNDUxMTU0NS4xNjU5NTQ3NTI4*_ga_YD24XVZNC7*MTY1OTcyOTU2Ni44LjEuMTY1OTczMDQwMy4w&_ga=2.146896050.469137610.1659710083-1324511545.1659547528" target="_blank"
+              class="p-3 px-6 text-white bg-orange-500 rounded-full baseline hover:bg-orange-400"
+            >
+            Start Free Trial for Full suite of features
             </a>
           </div>
         </div>
@@ -132,7 +140,7 @@
     </section>
 
     <section
-      class="partners container mx-auto hidden items-center justify-center pt-56 pb-16 space-x-6 md:block"
+      class="partners container mx-auto hidden items-center justify-center pt-20 pb-16 space-x-6 md:block"
     >
       <div class="items-center justify-center space-x-6 md:flex">
         <img src="img/facebook-logos.png" alt="" />
@@ -149,18 +157,18 @@
           <h1 class="text-center font-bold text-xl text-white uppercase">
             No hidden charges, no set up fee, cancel anytime
           </h1>
-          <h1 class="text-center font-bold text-5xl mt-5 text-bingPurpleDark">
+          <h1 class="text-center font-black text-5xl mt-5 text-bingPurpleDark">
             We offer an extremely affordable pricing per user
           </h1>
           
         </div>
         <!-- Billing Type -->
         <div class="flex justify-center gap-2 bg-bingPurpleDark py-2 px-2 mt-8 rounded-full">
-          <a class="bg-white px-8 py-2 rounded-full text-lg">Monthly</a>
-          <a class=" text-white px-8 py-2 rounded-full">Annual</a>
+          <a class="bg-white px-8 py-1 rounded-full text-lg" id="monthly">Monthly</a>
+          <a class="text-white px-8 py-1 rounded-full" id="annual">Annual</a>
         </div>
       </div>
-      <div class="flex container space-x-10 justify-center mx-auto">
+      <div class="flex md:flex-row items-center container gap-4 justify-center mx-auto flex-col">
         <div
           class="flex flex-col w-80 justify-between rounded-3xl bg-white p-10"
         >
@@ -183,9 +191,9 @@
           </div>
           <a
             href="#"
-            class="p-3 px-6 block mt-36 text-white bg-bingPurple rounded-full baseline text-center hover:bg-bingPurpleHover"
+            class="p-3 px-6 block mt-24 text-white bg-bingPurple rounded-full baseline text-center hover:bg-bingPurpleHover"
           >
-            Sign Up for Free CRM
+            Get Started
           </a>
           <span class="text-white font-bold text-lg text-center pt-4 invisible"
             >Save 12% with our Annual Subscription!</span
@@ -247,7 +255,7 @@
             href="#"
             class="p-3 px-6 block mt-16 text-white bg-bingPurple rounded-full baseline text-center hover:bg-bingPurpleHover"
           >
-            Sign Up for Free CRM
+            Get Started
           </a>
           <span class="text-orange-500 font-bold text-lg text-center pt-4"
             >Save 12% with our Annual Subscription!</span
@@ -327,7 +335,7 @@
             href="#"
             class="p-3 px-6 block mt-10 text-white bg-bingPurple rounded-full baseline text-center hover:bg-bingPurpleHover"
           >
-            Sign Up for Free CRM
+            Get Started
           </a>
           <span class="text-orange-500 font-bold text-lg text-center pt-4"
             >Save 12% with our Annual Subscription!</span
@@ -538,13 +546,15 @@
             Copyright &copy; 2022, All Rights Reserved
           </div>
           <div>
-            <img src="img/logo-white.svg" class="h-8" alt="Logo" />
+            <img src="https://www.bling.cloud/img/bling-logo-white.svg" class="w-40" alt="Logo" />
+            <span class="text-white">San Francisco Bay Area, CA</span>
+            <p class="text-lg text-white py-4">All your Customer <br> Communication in ONE single <br> place</p>
           </div>
           <!-- Social Links Container -->
-          <div class="flex justify-center space-x-4">
+          <div class="flex justify-center items-center space-x-4">
             <!-- Link 1 -->
             <a href="">
-              <img src="img/icon-facebook.svg" class="h-8" alt="" />
+              <img src="img/icon-facebook.svg" class="h-6" alt="" />
             </a>
             <!-- Link 2 -->
             <a href="">
@@ -552,15 +562,15 @@
             </a>
             <!-- Link 3 -->
             <a href="">
-              <img src="img/icon-twitter.svg" class="h-8" alt="" />
+              <img src="img/icon-twitter.svg" class="h-6" alt="" />
             </a>
             <!-- Link 4 -->
             <a href="">
-              <img src="img/icon-pinterest.svg" class="h-8" alt="" />
+              <img src="img/icon-pinterest.svg" class="h-6" alt="" />
             </a>
             <!-- Link 5 -->
             <a href="">
-              <img src="img/icon-instagram.svg" class="h-8" alt="" />
+              <img src="img/icon-instagram.svg" class="h-6" alt="" />
             </a>
           </div>
         </div>
