@@ -997,6 +997,11 @@ video {
   padding-right: 0.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1406,6 +1411,11 @@ body {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:text-left {
